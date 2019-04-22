@@ -69,10 +69,10 @@
 
 \author{Marios Belk}
 \email{belk@cs.ucy.ac.cy}
-\author{Andreas Pitsilides}
+\author{Andreas Pitsillides}
 \email{andreas.pitsillides@ucy.ac.cy}
 \affiliation{%
-  \institution{University of Cyprus}
+  \institution{Department of Computer Science, University of Cyprus}
   \country{Cyprus}}
 
 % By default, the full list of authors will be used in the page headers. Often, this list is too long, and will overlap
@@ -83,7 +83,7 @@
 %
 % The abstract is a short summary of the work to be presented in the article.
 \begin{abstract}
-In order to achieve the highest quality of healthcare provision, it is increasingly important to collect highly confidential and personal medical data that has been obtained from a variety of sources, including personal medical devices and to share this through a variety of means, including public networks and other systems whose security cannot be implicitly trusted. Consequently, the future medical centres will be \emph{highly decentralised}, with the data about a single patient residing on a number of different devices, some of which will be completely outside of the medical organisation. This raises a number of issues related to preserving security, privacy and ownerwship of the patient data, while still ensuring that the patients get the best possible medical treatment. The goal of the recently-started \emph{Serums} EU H2020 project is to develop novel mechanisms for collecting, storage, communication and analysis of the medical data, together with novel authentication and authorisation mechanisms, that will enable putting patients in the centre of the future healthcare provision, enhance their personal care, maximise the quality of treatment they receive all the while ensuring trust in the security and privacy of their confidential medical data. 
+In order to achieve the highest quality of healthcare provision, it is increasingly important to collect highly confidential and personal medical data that has been obtained from a variety of sources, including personal medical devices, and to share this through a variety of means, including public networks and other systems whose security cannot be implicitly trusted. Consequently, future medical centres will be \emph{highly decentralised}, with individual patient data residing on a number of different devices, some of which are outside of the medical organisation. This raises a number of issues related to preserving security, privacy and ownership of patient data, while still ensuring that patients get the best possible medical treatment. The goal of the recently-started \emph{Serums} EU H2020 project is to develop novel mechanisms for collecting, storing, communicating and analysing medical data, together with novel authentication and authorisation mechanisms, that will put patients in the centre of future healthcare provision, enhance their personal care, and maximise the quality of treatment received, while ensuring trust in the security and privacy of their confidential medical data. 
 \end{abstract}
 
 
@@ -127,7 +127,7 @@ In order to achieve the highest quality of healthcare provision, it is increasin
 %
 % Keywords. The author(s) should pick words that accurately describe the work being
 % presented. Separate the keywords with commas.
-\keywords{datasets, neural networks, gaze detection, text tagging}
+\keywords{Medical data, Smart Healthcare, Data Sharing, Privacy, Security, Personalised Medicine}
 
 %
 % A "teaser" image appears between the author and affiliation information and the body 
@@ -147,9 +147,9 @@ In order to achieve the highest quality of healthcare provision, it is increasin
 \section{Introduction}
 
 \noindent
-In order to achieve the highest quality of healthcare provision, it is increasingly important to collect highly confidential and personal medical data that has been obtained from a variety of sources, including personal medical devices and to share this through a variety of means. Integrating home-based healthcare into a holistic treatment plan is more cost effective, reduces travel-associated risks and costs and increases the quality of healthcare provision. Consequently, the medical centres of the future will be \emph{highly decentralised}, with the data about a single patient residing on a number of different devices, some of which will be reside outside of the trusted networks of the medical organisation. In some cases, cooperation between different health institutions that may reside in different countries, might be required to ensure the patients get the best possible treatment. All this raises a number of issues related to preserving security and privacy of the patient data, together with complying to a combination of different national and international legislations (such as GDPR) that regulate ownership and sharing of that data.
+In order to achieve the highest quality of healthcare provision, it is increasingly important to collect highly confidential and personal medical data that has been obtained from a variety of sources, including personal medical devices, and to share this through a variety of means. Integrating home-based healthcare into a holistic treatment plan is more cost effective, reduces travel-associated risks and costs, and increases the quality of healthcare provision. Consequently, the medical centres of the future will be \emph{highly decentralised}, with individual patient data residing on a number of different devices, some of which will be outside of the trusted networks of the medical organisation. In some cases, cooperation between health institutions from different countries might be required to ensure that patients get the best possible treatment. All this raises a number of issues related to preserving security and privacy of the patient data, together with complying to a combination of different national and international legislations (such as GDPR) that regulate ownership and sharing of that data.
 
-The goal of the recently-started \emph{Serums: Securing Medical Data in Smart Patient-Centric Healthcare Systems} EU H2020 project is to develop novel mechanisms for safe and secure collection, storage, communication and analysis of the medical data. We aim to put patients in the centre of the future healthcare provision, enhance their personal care, maximise the quality of treatment they will receive while ensuring trust in the security and privacy of their confidential medical data. Figure~\ref{fig:smartcentre} shows the example of data sharing in the future-generation smart healthcare centres, where different entities (different classes of users, different parts of the healthcare center system) need to exchange data. The main objectives of the \emph{Serums} project are 
+The goal of the recently-started \emph{Serums: Securing Medical Data in Smart Patient-Centric Healthcare Systems} EU H2020 project is to develop novel mechanisms for safe and secure collection, storage, communication and analysis of medical data. We aim to put patients in the centre of future healthcare provision, enhance their personal care, maximise the quality of their treatments while ensuring trust in the security and privacy of their confidential medical data. Figure~\ref{fig:smartcentre} shows an example of data sharing in the future-generation smart healthcare centres, where different entities (different classes of users and parts of the healthcare center system) need to exchange data. The main objectives of the \emph{Serums} project are: 
 
 \begin{figure}
   \centering
@@ -164,7 +164,7 @@ The goal of the recently-started \emph{Serums: Securing Medical Data in Smart Pa
 \item to develop \emph{new data analytic techniques} that will be able to take advantage of advances in the availability of heterogeneous real-time personal healthcare information, as part of a holistic smart healthcare system, while respecting privacy and security concerns;
 \item to develop/enhance \emph{authentication and trust mechanisms} that ensure that only properly authorised agents have access to the required parts of medical records;
 \item to demonstrate world-leading levels of compliance with emerging legal and ethical requirements for the protection of personal and medical data across national boundaries, including transnational requirements such as GDPR;
-\item To \emph{demonstrate the effectiveness of the Serums techniques against a variety of real-world medical use cases}, including both ongoing and emergency medical care scenarios;
+\item to \emph{demonstrate the effectiveness of the Serums techniques against a variety of real-world medical use cases}, including both ongoing and emergency medical care scenarios.
 \end{itemize}
 
 
@@ -177,10 +177,10 @@ As a part of the \emph{Serums} project, we will extend or develop the following 
 \item \emph{Smart Patient Record Format}, that will standardise representation of the patient medical data across different use cases. Our aim is to develop a unified way of structuring medical records that will allow for easier and more generic data analysis, as well as automatic generation of synthetic medical data for development and testing of systems.
 \item \emph{Blockchain technology} that will be used to control storage and access to the sensitive medical data and to record all transactions on the data.
 \item \emph{Deep-learning based metadata extraction mechanisms} that will be used to pre-process possibly unstructured medical data (e.g.~data coming from personal monitoring devices) and extract the useful metadata from it that is required for the appropriate storage and data analytics on it.
-\item \emph{Distributed Privacy-Preserving Learning Technology} for analysing medical data, that will be especially tailored to the distributed smart medical centres of the future, and will allow processing of the data without leakage of any sensitive information;
-\item \emph{Authentication and Authorisation Techniques} that will go beyond the traditional simple authentication/authorisation schemes, will be tailored to different classes of user and will make sure that only the appropriate entities can view the (appropriate parts of) smart patient records.
-\item \emph{Data Cloaking} for masking the data to allow safe transmition over possibly untrusted networks;
-\item \emph{Data Fabrication} that will allow generation of synthetic but realistic medical data, based on the strict rules and relationships between individual data items; This will allow rapid development and training of authentication, storage, access, cloaking and analytics models without risks of exposing sensitive personal data;
+\item \emph{Distributed Privacy-Preserving Learning Technology} for analy\-sing medical data, that will be especially tailored to the distributed smart medical centres of the future, and will allow processing of the data without leakage of any sensitive information.
+\item \emph{Authentication and Authorisation Techniques} that will go beyond the traditional "one-size-fits-all" authentication and authorisation schemes, will be bootstrapped to different classes of users by considering their preferences and interaction context, and will make sure that only the appropriate entities can view the (appropriate parts of) smart patient records.
+\item \emph{Data Cloaking} for masking the data to allow safe transmission over possibly untrusted networks.
+\item \emph{Data Fabrication} that will allow the generation of synthetic but realistic medical data, based on strict rules and relationships between individual data items. This will allow rapid development and training of authentication, storage, access, cloaking and analytic models without risks of exposing sensitive personal data.
 \end{itemize}
 
 
@@ -191,7 +191,7 @@ The \emph{Serums} technologies will be evaluated on several large-scale use case
 
 \textbf{Hospital Clinic of Barcelona Smart Platform} will integrate health and care data from the whole patient healthcare ecosystem, combining data gathered from different sources inside the hospital and outside of it and considering different levels of communication. The data sources will include the Catalonian Healthcare Platform, which is a regional healthcare data repository that will share the data it contains with the Hospital Clinic of Barcelona, taking into account GDPR and different local regulations. We want to integrate this data into the coherent system, taking into account the appropriate permissions of the patients and data exchange security standards.
 
-\textbf{St Andrews Oncology}
+\textbf{Edinburgh Cancer Data Gateway} aims to improve the quality and capability of reporting outcomes within South East Scotland Oncology databases in real time using routinely captured and integrated electronic healthcare data, as well as patient reported outcome measures (PROMS). The Edinburgh Cancer Centre (ECC) based in the Western General Hospital (WGH) contains National Health Service Lothian (NHS Lothian) cancer patient data from multiple resources. The resources are scattered across different systems and platforms, making it difficult to use the information collected in a useful way. There is a lack of proxy between the different (sub)systems or mechanisms to join the information automatically. This information includes oncology data (treatment regimes, etc), and more general data on hospitalisations, cause of death, prescribing and other patient information. The data has to be integrated to make it possible to accurately predict toxicity levels from a treatment regime, taking into account patient information (PROMS) in between treatments, comorbidities and further medications.
 
 \textbf{Transnational Data Exchange} will focus on scenarios where information from individual use cases needs to be exchanged, transmitting data across national borders, complying with a combination of different regulations.
 
